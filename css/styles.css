@@ -1,1 +1,80 @@
-body{ text-align: center;}
+/* цвет фона  #FFFFFF */
+/* вторичний цвет фона #F5F5F5*/
+/* цвет текста #212121 */
+/* вторичный цвет текста #757575*/
+/* акцент #2196F3*/
+
+
+:root{
+    --primary-text-color:#FFFFFF   ;
+--secondary-text-color:
+--dark 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------заголовок с навигацией------------- */
+.page-header, .nav, .nav-link
+{Font family: Roboto;
+Font style: Medium;
+Font size: 14px;
+Line height: 16px;
+Line height: 100%;
+color: #212121;
+}
+
+
+
+
+
+
+.nav-link--active {
+    color: #2196F3;
+}
+.logo {
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+.contacs {
+    color: #757575;
+}
+.contacs-link {color:#757575 ; }
+/* ----------------------------Hero-------------------- */
+/* -----------------------benefits------------------- */
+/* ---------------------- about --------------------- */
+/* ----------------------------team------------------ */
+/* --------------------------fu------- */
+
+/* заховати заголовок */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
