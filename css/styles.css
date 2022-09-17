@@ -1,72 +1,43 @@
-/* цвет фона  #FFFFFF */
-/* вторичний цвет фона #F5F5F5*/
-/* цвет текста #212121 */
-/* вторичный цвет текста #757575*/
-/* акцент #2196F3*/
+:root {
+    /* колір текста основного #757575*/
+    /* колір текста для заголовок #212121 */
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    /* акцентный колір фону #2196F3*/
+    /* акцентный колір тексту #FFFFFF*/
+    --acсent-backgroud: #2196F3;
+    --accent-text: #FFFFFF;
 
-
-:root{
-    --primary-text-color:#FFFFFF   ;
---secondary-text-color:
---dark 
+    /* колір фона основний  #FFFFFF */
+    /* колір фона для Hero та footer #2F303A*/
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    background-color: #FFFFFF;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    /* letter-spacing: 0.03em; */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------заголовок с навигацией------------- */
-.page-header, .nav, .nav-link
-{Font family: Roboto;
-Font style: Medium;
-Font size: 14px;
-Line height: 16px;
-Line height: 100%;
-color: #212121;
+.link {
+    text-decoration: none;
 }
 
-
-
-
-
-
-.nav-link--active {
-    color: #2196F3;
+.list {
+    list-style: none;
 }
-.logo {
-    letter-spacing: 0.03em;
-    color: #2196F3;
-}
-.contacs {
-    color: #757575;
-}
-.contacs-link {color:#757575 ; }
-/* ----------------------------Hero-------------------- */
-/* -----------------------benefits------------------- */
-/* ---------------------- about --------------------- */
-/* ----------------------------team------------------ */
-/* --------------------------fu------- */
 
-/* заховати заголовок */
+.button {
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
+}
+
+/*--- заховати заголовок--- */
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -78,3 +49,120 @@ color: #212121;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+/* ------------------заголовок с навигацией------------- */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--secondary-text-color);
+}
+
+.logo-accent {
+    color: var(--acсent-backgroud);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--acсent-backgroud);
+}
+
+.contacts {
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.current {
+    color: var(--acсent-backgroud);
+}
+
+/* ----------------------------Hero-------------------- */
+.hero {
+    background: var(--secondary-background-color);
+}
+
+.title-hero {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    color: var(--primary-background-color);
+}
+
+.button-hero {
+    font-weight: 700;
+    line-height: 1.875;
+    color: var(--accent-text);
+    background: var(--acсent-backgroud);
+    border-radius: 4px;
+    border-color: var(--acсent-backgroud);
+    /* letter-spacing: 0.06em; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+}
+
+.button-potfolio {
+    font-weight: 500;
+    line-height: 1.625;
+    /* text-align: center; */
+    /* letter-spacing: 0.03em; */
+
+}
+
+.button-potfolio:hover,
+.button-potfolio:focus {
+    color:var(--accent-text);
+    background:var(--acсent-backgroud)
+}
+
+/* -------------заголовок---------------- */
+.title {
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--secondary-text-color);
+}
+
+/* -----------------------benefits------------------- */
+.title-benefits {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+/* ---------------------- about --------------------- */
+
+/* ----------------------------team------------------ */
+.team-user {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1875;
+    /* text-align: center; */
+    /* letter-spacing: 0.03em; */
+}
+
+.team-user-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: var(--secondary-text-color);
+    /* text-align: center;
+    letter-spacing: 0.03em; */
+}
+
+/* --------------------------footer------- */
+.footer {
+    color: var(--accent-text);
+    background: var(--secondary-background-color);
+}
+
+.address-link {
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--accent-text);
+}
