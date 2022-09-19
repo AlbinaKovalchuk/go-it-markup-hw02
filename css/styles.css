@@ -76,9 +76,7 @@ body {
     color: var(--acсent-backgroud);
 }
 
-.contacts {
-    color: var(--primary-text-color);
-}
+
 
 .current {
     color: var(--acсent-backgroud);
@@ -153,11 +151,10 @@ body {
 
 /* --------------------------footer------- */
 .footer { font-family: 'Roboto', sans-serif;
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
     background: var(--secondary-background-color);
-    letter-spacing: 0.03em;
-}
+    }
 
 .footer-logo {
     font-family: 'Raleway';
@@ -171,9 +168,17 @@ body {
 .address-link {
     font-style: normal;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     color: var(--accent-text);
 }
 
+.contacts {
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    }
+         /* color: rgba(255, 255, 255, 0.6); */
 /* ----------------------------portfolio--------------- */
 .button-potfolio {
     font-weight: 500;
